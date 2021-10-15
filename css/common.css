@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+body{
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #333;
+}
+
+/* header */
+header{
+  position: absolute;
+  z-index: 10;
+}
+
+a{
+  text-decoration: none;
+  color: "1ca9e3";
+}
+
+li{
+  list-style: none;
+}
+
+.nav_all{
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 3px 3px 0 rgb(0, 0, 0 ,20%);
+}
+
+.nav_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_item{
+  font-size: 18px;
+  padding: 0 24px;
+}
+
+.nav_link{
+  display: inline-block;
+  padding: 20px 0;
+  color: #333;
+}
+
+.nav_link:hover{
+  color: #75a9ff;
+}
+
+/* top */
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-align: center;
+  height: 700px;
+  background: url(../img/totoro025.jpeg) 100%;
+  background-size: cover;
+
+  opacity: 0.6;
+}
+
+.top_title{
+  font-family: serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 15px;
+}
+
+.top_subtitle{
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(121, 121, 121, 0.301);
+  letter-spacing: 10px;
+}
+
+/* about */
+.section{
+  padding: 120px 0;
+}
+
+.section:nth-of-type(odd){
+  background-color: #f7f7f7;
+}
+
+.inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: o 40px;
+}
+
+.about1{
+  display: flex;
+  
+}
+
+.about_contents{
+  width: 70%;  
+}
+
+.about_img{
+  display: block;
+  width: 20%;
+  margin: 0 auto 30px;
+}
+
+.font1{
+  font-family: serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.font2{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.font3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.font4{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+
+/* introduction */
+.intro_all{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro_item{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.intro_img{
+  width: 40%;
+}
+
+.intro_item img{
+  width: 100%;
+}
+
+.intro_item img:hover{
+  transform: scale(1.1,1.1);
+  transition: 0.5s all;
+}
+
+.intro_comment{
+  width: 50%;
+  
+}
+
+.intro_comment h5{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.intro_comment p{
+  font-size: 13px;
+}
+
+.intro_memo{
+  text-align: center;
+}
+
+.ghibli_link{
+  color: #75a9ff;
+}
+
+.ghibli_link:hover{
+  color: rgb(76, 110, 76);
+}
+
+/* comment */
+#comment {
+  background: url(../img/howl049.jpeg) 60%;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+}
+
+#comment h2 { 
+  color: #000;
+  padding: 40px 0; 
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  line-height: 2;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: solid #ddd 1px;
+  width: 65%;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 6px;
+}
+
+textarea {
+  vertical-align: top;
+  height: 200px;
+}
+
+.button_submit {
+  text-align: center;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 50px;
+  background-color: rgb(94, 155, 94);
+  margin: 50px 0;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(33, 53, 30, 0.377);
+}
+
+.button:active{
+  position: relative;
+  top: 3px;
+  box-shadow: none;
+}
+
+/* hooter */
+.bottom{
+  background-color: #333;
+}
+
+.bottom .inner{
+  padding: 30px;
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
