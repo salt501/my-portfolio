@@ -1,0 +1,11 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin iphone{
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

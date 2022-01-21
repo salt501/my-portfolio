@@ -5,7 +5,7 @@
     <title>おすすめのジブリ音楽</title>
     <meta name="description" content="私のおすすめジブリ音楽を紹介します">
     <meta name="keywords" content="音楽,ジブリ,ハウル,耳をすませば,猫の恩返し">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta property="og:title" content="ジブリ音楽の紹介">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://codestar.dev">
@@ -32,26 +32,27 @@
     <main>
       <!-- top -->
       <section class="top">
-        <div>
-          <h1 class="top_title">ジブリ音楽</h1>
-          <p class="top_subtitle"></p>
+        <div class="top_title">
+          <h1 class="font1">ジブリ音楽</h1>
+ 
         </div>
       </section>
 
    <!-- about -->
       <section class="about section" id="about">
         <div class="inner">
-          <h2 class="font1">ABOUT</h2>
-          <div class="about1">
-           <img class="about_img" src="img/IMG_meのコピー.png" alt="プロフィール画像">
-          
-           <div class="about_contents">
-             <p class="font3">shiori</p>
-             <p class="font2">フリーランスエンジニア</p>
-             <p class="font4">両親が打楽器奏者の音楽一家に生まれました。
-             <br>幼少期から音楽が近くにあり、ピアノとクラリネットができます。
-             <br>そんな私の好きなジブリ音楽をご紹介します！</p>
-          </div> 
+          <h2 class="font2">ABOUT</h2>
+          <div class="about_container">
+            <div class="about_img">
+              <img src="img/IMG_meのコピー.png" alt="プロフィール画像">
+            </div>
+            <div class="about_contents">
+              <p class="font3">shiori</p>
+              <p class="font4">フリーランスエンジニア</p>
+              <p class="font5">両親が打楽器奏者の音楽一家に生まれました。
+              <br>幼少期から音楽が近くにあり、ピアノとクラリネットができます。
+              <br>そんな私の好きなジブリ音楽をご紹介します！</p>
+            </div> 
           </div> 
         </div>
       </section>
@@ -59,14 +60,11 @@
       <!-- introduction -->
       <section class="intro section" id="intro">
         <div class="inner">
-          <div class="font1">
-            <h2>INTRODUCTIONS</h2>
+          <div>
+            <h2 class="font2">INTRODUCTIONS</h2>
           </div>
-          <div class="font2">
-            <p>私のおすすめのジブリ音楽を紹介します<br></p>
-          </div>
+          <p class="font6">私のおすすめのジブリ音楽を紹介します</p>
           <div class="intro_all">
-
             <figure class="intro_item">
               <div class="intro_img">
                 <img src="img/howl033.jpeg" alt="ハウル">
@@ -127,22 +125,26 @@
       <!-- comment -->
       <section class="comment section" id="comment">
         <div class="inner">
-          <h2 class="font1">COMMENT</h2>
-          <p class="font2">皆さんの好きなジブリ音楽はなんですか？</p>
+          <h2 class="font2">COMMENT</h2>
+          <p class="font6">皆さんの好きなジブリ音楽はなんですか？</p>
           <form action="form" method="post">
-            <div>
-              <label for="name">作品タイトル:</label>
-              <input type="text" id="name" name="name">
-            </div>
-            <div>
-              <label for="title">曲名:</label>
-              <input type="text" id="title" name="title">
-            </div>
-            <div>
-              <label for="msg">好きなところ:</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </div>
-
+            <input type="hidden" NAME="_to" VALUE="shiori10430501@gmail.com">
+            <input type="hidden" NAME="_subject" VALUE="フォームデコードより">
+            <input type="hidden" NAME="_from" VALUE="shiori10430501@gmail.com">
+            <table>
+              <tr>
+                <td class="label">作品タイトル:</td>
+                <td><input type="text" id="name" name="name"></td>
+              </tr>
+              <tr>
+                <td class="label">曲名:</td>
+                <td><input type="text" id="title" name="title"></td>
+              </tr>
+              <tr>
+                <td class="label">好きなところ:</td>
+                <td><textarea id="msg" name="user_message"></textarea></td>
+              </tr>
+            </table>
             <div class="button_submit">
               <button class="button" type="submit">送信</button>
             </div>
